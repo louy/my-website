@@ -1,4 +1,4 @@
-deploy:
+pages:
   image:
     name: node
   script:
@@ -7,3 +7,5 @@ deploy:
   artifacts:
     paths:
     - public
+  only:
+  - master
