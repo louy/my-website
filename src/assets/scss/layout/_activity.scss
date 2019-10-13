@@ -1,0 +1,25 @@
+.activity {
+  display: grid;
+  grid-template: auto / auto 1fr;
+  img {
+    grid-column: 1;
+    grid-row: 1;
+    height: 100px;
+    width: 100px;
+    margin: 10px 10px 10px 0;
+		border-radius: _size(border-radius);
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  h3, p {
+    margin: 0 0 10px;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+  margin: 0 0 20px;
+}
