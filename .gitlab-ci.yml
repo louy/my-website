@@ -1,0 +1,9 @@
+deploy:
+  image:
+    name: node
+  script:
+  - npm ci
+  - npm run build
+  artifacts:
+    paths:
+    - public
