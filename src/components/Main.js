@@ -5,7 +5,7 @@ import Activity from './Activity'
 const ACTIVITIES = [
   {title: 'Tech Lead @ McKinsey & Company', time: 'January 2017—Present', image: require('../images/mckinsey.png'), current: true},
   {title: 'Lead Engineer @ Urban Massage', time: 'July 2015—January 2017', image: require('../images/urban.jpg')},
-  {title: 'Full Stack Developer @ Ardroid', time: 'July 2015—January 2017', image: require('../images/ardroid.png')},
+  {title: 'Full Stack Developer @ Ardroid', time: 'July 2010—July 2015', image: require('../images/ardroid.png')},
   {title: 'Full Stack Developer @ Alpha Apps', time: 'May 2013—July 2015', image: require('../images/alpha-apps.png')},
   {title: 'Full Stack Developer @ AITNews', time: 'February 2013—June 2015', image: require('../images/aitnews.jpg')},
   {title: 'Full Stack Developer @ PixelInvention', time: 'September 2011—March 2013', image: require('../images/pixelinvention.jpg')},
