@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Louay Alakkad | Tech Lead & Solutions Architect in London",
-    author: "Louay Alakkad",
-    description: "The personal website of Louay Alakkad"
+    title: 'Louay Alakkad | Tech Lead & Solutions Architect in London',
+    author: 'Louay Alakkad',
+    description: 'The personal website of Louay Alakkad',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +19,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
-}
+};
