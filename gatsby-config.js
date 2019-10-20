@@ -18,6 +18,12 @@ module.exports = {
         icon: 'src/images/louay.jpg', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/Layout`),
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-plugin-extract-schema',
