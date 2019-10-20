@@ -6,11 +6,25 @@ parserOptions:
   ecmaFeatures: 
     jsx: true
 extends: [prettier, plugin:react/recommended]
-plugins: [react, prettier]
+plugins: [react, react-hooks, prettier, graphql]
 settings:
   react:
     version: detect
   linkComponents: [Link]
+env:
+  browser: true
+  node: true
+globals:
+  graphql: false
 rules:
   prettier/prettier: error
   react/no-unescaped-entities: off
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: warn
+  prefer-template: error
+  no-useless-concat: error
+  graphql/template-strings: 
+    - error
+    - env: "relay"
+      schemaJsonFilepath: "./schema.json"
+      tagName: "graphql"

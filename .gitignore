@@ -1,8 +1,9 @@
 # Project dependencies
 .cache
 node_modules
-yarn-error.log
+*.log
 
-# Build directory
+# Build artifacts
 /public
 .DS_Store
+/schema.json
