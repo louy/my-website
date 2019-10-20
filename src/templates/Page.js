@@ -12,7 +12,7 @@ export default function Page({ data }) {
       </Helmet>
       <div id="wrapper" className="page">
         <Link to={`/`} className="home-link">
-          {data.site.siteMeta.name}
+          {data.site.siteMetadata.name}
         </Link>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
