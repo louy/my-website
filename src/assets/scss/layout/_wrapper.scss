@@ -36,5 +36,9 @@
 
 		&.page {
 			@include vendor('justify-content', 'flex-start');
+
+			.home-link {
+				margin: 0 auto 30px;
+			}
 		}
 	}

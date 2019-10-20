@@ -1,57 +1,52 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
-const Header = props => (
-  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    {/* <div className="logo">
-            <span className="icon fa-diamond"></span>
-        </div> */}
-    <div className="content">
-      <div className="inner">
-        <h1>Louay Alakkad</h1>
-        <p>Award-wining tech lead &amp; solution architect.</p>
+const Header = props => {
+  const data = useStaticQuery(graphql`
+    query Header {
+      site {
+        siteMetadata {
+          name
+          headline
+          description
+        }
+      }
+
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              path
+              title
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  return (
+    <header id="header">
+      <div className="content">
+        <div className="inner">
+          <h1>{data.site.siteMetadata.name}</h1>
+          <p>{data.site.siteMetadata.headline}</p>
+        </div>
       </div>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('about');
-            }}
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('work');
-            }}
-          >
-            Work
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('contact');
-            }}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-);
 
-Header.propTypes = {
-  onOpenArticle: PropTypes.func,
-  timeout: PropTypes.bool,
+      {data.allMarkdownRemark.edges.length === 0 ? null : (
+        <nav>
+          <ul>
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+              <li key={node.frontmatter.path}>
+                <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </header>
+  );
 };
 
 export default Header;

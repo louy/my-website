@@ -16,7 +16,11 @@
 		position: relative;
 		max-width: 100%;
 		z-index: 3;
-		display: none;
+		display: flex;
+
+		.home-link {
+			margin: 0 auto 30px;
+		}
 
 		article {
 			@include vendor('transform', 'translateY(0.25rem)');
@@ -85,7 +89,6 @@
 					}
 				}
 			}
-
 		}
 
 		@include breakpoint(small) {

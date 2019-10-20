@@ -1,22 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Activity = ({ activity }) => (
+const Activity = ({ title, time, children }) => (
   <div className="activity">
-    {activity.image ? <img src={activity.image} /> : null}
+    {children ? <div className="activity-image">{children}</div> : null}
     <div className="activity-content">
-      <h3>{activity.title}</h3>
-      <p>{activity.time}</p>
+      <h3>{title}</h3>
+      <p>{time}</p>
     </div>
   </div>
 );
 
 Activity.propTypes = {
-  activity: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    image: PropTypes.string,
-  }).isRequired,
+  title: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  children: PropTypes.string,
 };
 
 export default Activity;
