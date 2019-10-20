@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: process.env.CI_PAGES_URL || 'https://louay.alakkad.me',
     title: 'Louay Alakkad | Tech Lead & Solutions Architect in London',
     name: 'Louay Alakkad',
     headline: 'Award-wining tech lead & solution architect.',
@@ -70,5 +71,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-extract-schema',
+    'gatsby-plugin-sitemap',
   ],
 };
