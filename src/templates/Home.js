@@ -28,7 +28,6 @@ const useTimeout = (fn, deps, ms) => {
 
 const Index = props => {
   const transitionState = useContext(TransitionStatusContext);
-  console.log({ transitionState });
 
   const [isLoading, setIsLoading] = useState(
     typeof window !== undefined && transitionState === 'entered'
