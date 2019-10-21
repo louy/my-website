@@ -2,4 +2,4 @@
 
 The personal website of Louay Alakkad.
 
-You can view my website [https://louay.alakkad.me](here).
+You can view my website [here](https://louay.alakkad.me).
