@@ -7,6 +7,7 @@
   "dependencies": {
     "@babel/core": "^7.13.10",
     "babel-preset-gatsby": "^1.0.0",
+    "caniuse-lite": "^1.0.30001200",
     "gatsby": "^2.15.28",
     "gatsby-plugin-extract-schema": "0.0.5",
     "gatsby-plugin-layout": "^1.1.13",
