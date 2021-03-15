@@ -1,0 +1,2 @@
+language = "nodejs"
+run = "NODE_ENV=production npx serve"

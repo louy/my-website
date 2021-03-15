@@ -1,0 +1,19 @@
+{
+  "public": "public",
+  "headers": [
+    {
+      "source" : "static/**/*",
+      "headers" : [{
+        "key" : "Cache-Control",
+        "value" : "max-age=31536000"
+      }]
+    }, {
+      "source" : "404.html",
+      "headers" : [{
+        "key" : "Cache-Control",
+        "value" : "max-age=30"
+      }]
+    }
+  ],
+  "directoryListing": false
+}
