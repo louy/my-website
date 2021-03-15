@@ -21,7 +21,7 @@
     "gatsby-remark-images": "^3.1.28",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-remark": "^2.6.30",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
