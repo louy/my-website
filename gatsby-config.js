@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Louayt Alakkad',
+        name: 'Louay Alakkad',
         short_name: 'LA',
         start_url: '/',
         background_color: '#663399',
@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
+    'gatsby-plugin-remove-serviceworker',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
